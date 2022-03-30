@@ -1,10 +1,13 @@
 import './Navbar.css'
-import logoNav from './img/Logo.png';
+import CartWidget from '../CartWidget/CartWidget'
 
 const Navbar = () =>{
     return(
         <nav className='Navbar'>
-            <img className='logo' src={logoNav}></img>
+            <div>
+            <img className='logo' src="./images/Logo.png"></img>
+            </div>
+            
             <ul className='navButtons'>
                 <li className='navLink'>
                     <a href='#'>About Artist</a>
@@ -19,6 +22,11 @@ const Navbar = () =>{
                     <a href='#'>Commisions</a>
                 </li>
             </ul>
+
+            <div>
+                <CartWidget></CartWidget>
+            </div>
+
         </nav>
         
     )

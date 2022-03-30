@@ -7,7 +7,7 @@ body{
 }
 .Navbar{
     width: 100%;
-    height: fit-content;
+    height: 5rem;
     background-color: orange;
     color:white;
     padding: 1rem;
@@ -26,7 +26,7 @@ body{
 .navButtons{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 45%;
 }
 
 .navButtons li{
@@ -37,5 +37,5 @@ body{
 .navButtons a{
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }

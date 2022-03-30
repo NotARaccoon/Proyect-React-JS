@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 import Navbar from './Components/Navbar/Navbar'
+import ItemList from './Components/ItemList/ItemList';
+import Gallery from './Components/Gallery/Gallery';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
-  const styles = {
-    color: 'white',
-    backgroundColor:'blueviolet',
-    borderRadius:'1.5rem',
-    padding:'1rem'
-  }
     return ( 
       <div className = "App" >
         <Navbar></Navbar>
-      {/*   <header className = "App-header" >
-          <img src = { logo } className = "App-logo"alt = "logo" />
-          <h1 style={styles} className="Titulo"> Comision 2404 </h1> 
-          <button> Boton </button> 
-          </header>  */}
+        <ItemList tittle='Gallery'></ItemList>
+        <Gallery></Gallery>
       </div>
     );
 }
-
+/* 
+const Home = () => {
+  return(
+    
+  )
+}
+ */
 export default App;
